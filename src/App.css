@@ -1,0 +1,35 @@
+.app {
+  text-align: center;
+  background-color: #685835;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  font-size: calc(10px + 2vmin);
+  color: rgb(219, 212, 112);
+  margin-bottom: 20px;
+}
+
+/* REDUCER */
+/* import { Todo } from './model';
+
+type Action = { type: 'add'; payload: string } | { type: 'done'; payload: number } | { type: 'remove'; payload: number}
+
+const TodoReducer = (state: Todo[], action: Action) => {
+    switch (action.type) {
+        case 'add':
+            return [...state, { id: Date.now(), todo: action.payload, isDone: false }];
+        case 'remove':
+            return state.filter((todo) => todo.id !== action.payload);
+        case 'done':
+            return state.map((todo) => todo.id === action.payload ? { ...todo, isDone: !todo.isDone } : todo);
+        default:
+            return state;
+}
+};
+
+export default TodoReducer; */
